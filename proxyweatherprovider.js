@@ -20,7 +20,7 @@ WeatherProvider.register("../../../mmm-weatherproviderunique/proxyweatherprovide
 		if (this.weatherProvider === undefined) {
 			// Find module with name in config.weatherProvider
 			// This module will be the real weather provider (must be a weather object)
-			const moduleWeatherProviders = MM.getModules().findAll(module => (module.name === this.config.weatherEndpoint));
+			const moduleWeatherProviders = MM.getModules().filter(module => (module.name === this.config.weatherEndpoint));
 			let moduleWeatherProvider = undefined;
 			if (moduleWeatherProviders.length == 1) {
 				moduleWeatherProvider = moduleWeatherProviders[0];
