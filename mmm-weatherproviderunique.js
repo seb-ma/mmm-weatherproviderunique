@@ -34,7 +34,7 @@ Module.register("mmm-weatherproviderunique", {
 	getScripts: function () {
 		const pathWeather = "modules/default/weather/";
 		return [
-			//`${pathWeather}weatherprovider.js`, `${pathWeather}weatherobject.js`, // // Already defined in weather module
+			//`${pathWeather}weatherprovider.js`, `${pathWeather}weatherobject.js`, // Already defined in weather module
 			`${pathWeather}providers/${this.config.weatherProvider.toLowerCase()}.js`,
 		];
 	},

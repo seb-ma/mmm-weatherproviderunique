@@ -10,13 +10,14 @@
 WeatherProvider.register("../../../mmm-weatherproviderunique/proxyweatherprovider", {
 	providerName: "ProxyWeatherProvider",
 	weatherProvider: undefined,
+	timeoutFetch: 10 * 1000, // Limit before killing Promise used by fetchXXX
 
 	defaults: {
 		weatherEndpoint: "mmm-weatherproviderunique", // Name of module used as provider
 		weatherEndpointId: undefined, // If multiple identical weatherEndpoint are defined, discriminate it on the config attribute
 	},
 
-	retrieveWeatherProvider() {
+	retrieveWeatherProvider: function () {
 		if (this.weatherProvider === undefined) {
 			// Find module with name in config.weatherProvider
 			// This module will be the real weather provider (must be a weather object)
@@ -36,27 +37,27 @@ WeatherProvider.register("../../../mmm-weatherproviderunique/proxyweatherprovide
 		return this.weatherProvider;
 	},
 
-	fetchCurrentWeather() {
+	fetchCurrentWeather: function () {
 		this.setCurrentWeather(this.retrieveWeatherProvider().currentWeather());
 		this.updateAvailable();
 	},
 
-	fetchWeatherForecast() {
+	fetchWeatherForecast: function () {
 		this.setWeatherForecast(this.retrieveWeatherProvider().weatherForecast());
 		this.updateAvailable();
 	},
 
-	fetchWeatherHourly() {
+	fetchWeatherHourly: function () {
 		this.setWeatherHourly(this.retrieveWeatherProvider().weatherHourly());
 		this.updateAvailable();
 	},
 
-	fetchCurrentPollution() {
+	fetchCurrentPollution: function () {
 		this.setCurrentPollution(this.retrieveWeatherProvider().currentPollution());
 		this.updateAvailable();
 	},
 
-	fetchPollutionForecast() {
+	fetchPollutionForecast: function () {
 		this.setPollutionForecast(this.retrieveWeatherProvider().pollutionForecast());
 		this.updateAvailable();
 	},
