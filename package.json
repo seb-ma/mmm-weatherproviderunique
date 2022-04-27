@@ -1,17 +1,17 @@
 {
-  "name": "mmm-weather-provider-unique",
-  "version": "1.0.0",
-  "description": "This MagicMirror² module is a proxy weather provider. It permits to declare only one real weather provider that is periodically fetched and used by all weather modules.",
-  "main": "mmm-weatherproviderunique.js",
-  "author": "Sébastien Mazzon",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/seb-ma/mmm-weatherproviderunique"
-  },
-  "keywords": [
-    "magicmirror-module",
-    "magicmirror2",
-    "weather-station"
-  ]
+	"name": "mmm-weather-provider-unique",
+	"version": "1.0.0",
+	"description": "This MagicMirror² module is a proxy weather provider. It permits to declare only one real weather provider that is periodically fetched and used by all weather modules.",
+	"main": "mmm-weatherproviderunique.js",
+	"author": "Sébastien Mazzon",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/seb-ma/mmm-weatherproviderunique"
+	},
+	"keywords": [
+		"magicmirror-module",
+		"magicmirror2",
+		"weather-station"
+	]
 }
