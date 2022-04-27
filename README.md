@@ -60,14 +60,14 @@ npm install --only=production
 
 ## Configuration options
 
-| Option                            | Description
-|---------------------------------- |------------
-| `initialLoadDelay`                | *Optional* The initial delay before loading. If you have multiple modules that use the same API key, you might want to delay one of the requests. (Milliseconds) <br><br>**Type:** `int`(milliseconds) <br>Default 0 milliseconds
-| `updateIntervalCurrentWeather`    | *Optional* How often does the content of current weather needs to be fetched? (Milliseconds)<br><br>**Type:** `int`(milliseconds) <br>Default 2 minutes
-| `updateIntervalCurrentPollution`  | *Optional* How often does the content of current pollution needs to be fetched? (Milliseconds)<br>Only applicable if `fetchCurrentPollution` is available (hack to be applied)<br><br>**Type:** `int`(milliseconds) <br>Default 8 minutes
-| `updateIntervalForecastWeather`   | *Optional* How often does the content of forecast weather needs to be fetched? (Milliseconds)<br>Not used if hack is applied to have `fetchWeatherAll` (this way: current and forecast are retried at the same time)<br><br>**Type:** `int`(milliseconds) <br>Default 15 minutes
-| `updateIntervalForecastPollution` | *Optional* How often does the content of forecast pollution needs to be fetched? (Milliseconds)<br>Only applicable if `fetchPollutionForecast` is available (hack to be applied)<br><br>**Type:** `int`(milliseconds) <br>Default 30 minutes
-| *all configurations of providers* | *see https://docs.magicmirror.builders/modules/weather.html#configuration-options*
+| Option							| Description
+|---------------------------------- |-------------
+| `initialLoadDelay`				| *Optional* The initial delay before loading. If you have multiple modules that use the same API key, you might want to delay one of the requests. (Milliseconds) <br><br>**Type:** `int`(milliseconds) <br>Default 0 milliseconds
+| `updateIntervalCurrentWeather`	| *Optional* How often does the content of current weather needs to be fetched? (Milliseconds)<br><br>**Type:** `int`(milliseconds) <br>Default 2 minutes
+| `updateIntervalCurrentPollution`	| *Optional* How often does the content of current pollution needs to be fetched? (Milliseconds)<br>Only applicable if `fetchCurrentPollution` is available (hack to be applied)<br><br>**Type:** `int`(milliseconds) <br>Default 8 minutes
+| `updateIntervalForecastWeather`	| *Optional* How often does the content of forecast weather needs to be fetched? (Milliseconds)<br>Not used if hack is applied to have `fetchWeatherAll` (this way: current and forecast are retried at the same time)<br><br>**Type:** `int`(milliseconds) <br>Default 15 minutes
+| `updateIntervalForecastPollution`	| *Optional* How often does the content of forecast pollution needs to be fetched? (Milliseconds)<br>Only applicable if `fetchPollutionForecast` is available (hack to be applied)<br><br>**Type:** `int`(milliseconds) <br>Default 30 minutes
+| *all configurations of providers*	| *see https://docs.magicmirror.builders/modules/weather.html#configuration-options*
 
 ### Nota
 
