@@ -40,9 +40,8 @@ var config = {
 
 				units: config.units,
 				tempUnits: config.units,
-				windUnits: config.units,
+				windUnits: config.units == "metric" ? "kmh" : "beaufort",
 				lang: config.language,
-				useKmh: true,
 			}
 		},
 	]
