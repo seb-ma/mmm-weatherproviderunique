@@ -54,7 +54,7 @@ var config = {
 cd ~/MagicMirror/modules # Change path to modules directory of to your actual MagiMirror² installation
 git clone https://github.com/seb-ma/mmm-weatherproviderunique
 cd mmm-weatherproviderunique
-npm install --only=production
+npm install --no-audit --no-fund --no-update-notifier --only=prod --omit=dev
 ```
 
 ## Configuration options
